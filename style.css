@@ -28,7 +28,7 @@ body {
 }
 
 .navbar {
-    padding: 0 130px;
+    padding: 0 270px;
     display: flex;
     justify-content: space-between;
 }
@@ -47,6 +47,10 @@ body {
     font-weight: bolder;
     color: #F9FAF8;
     flex-shrink: 1;
+}
+
+.left-container p {
+    font-weight: 200;
 }
 
 .right-container {
@@ -83,6 +87,8 @@ button {
 .info {
     display: flex;
     flex-direction: column;
+    margin-top: 15px;
+    margin-bottom: 65px;
 }
 
 .info h2 {
@@ -120,4 +126,31 @@ button {
     margin-top: 10px;
     font-size: 9px;
     width: 100px;
+}
+
+.testimonial {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    flex-direction: column;
+    width: 100%;
+    background-color: #e5e7eb;
+    color: #1F2937;
+    font-size: 36px;
+    padding: 40px 0;
+}
+
+.quote {
+    display: flex;
+    align-self: center;
+    width: 815px;
+    font-weight: lighter;
+    font-style: italic;
+}
+
+.author {
+    align-self: flex-end;
+    font-size: 24px;
+    margin-right: 20%;
+    font-weight: bold;
 }

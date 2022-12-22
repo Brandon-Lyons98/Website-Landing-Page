@@ -3,26 +3,47 @@
     font-family: sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: rgb(158, 0, 158);
+}
+
+a:hover {
+    color: #e5e7eb;
+    transition: all .3s;
+}
+
 body {
     display: flex;
     flex-direction: column;
+    background-color: #123456;
 }
 
 .header {
     justify-content: center;
     align-items: center;
     background-color: #1F2937;
+    padding-top: 70px;
 }
 
-.logo {
-    font-size: 24px;
-    color: #F9FAF8;
+.logo img {
     display: flex;
     align-items: center;
+    width: 150px;
+    height: auto;
+    border-radius: 40px;
 }
 
 .header-links {
-    color: white;
+    color: #e5e7eb;
+    font-size: 2rem;
     display: flex;
     justify-content: space-between;
 }
@@ -31,6 +52,7 @@ body {
     padding: 0 270px;
     display: flex;
     justify-content: space-between;
+    gap: 50px;
 }
 
 .left-container {
@@ -85,10 +107,11 @@ button {
 }
 
 .info {
+    background-color: rgb(135, 0, 0);
     display: flex;
     flex-direction: column;
-    margin-top: 15px;
-    margin-bottom: 65px;
+    padding-top: 15px;
+    padding-bottom: 65px;
 }
 
 .info h2 {
@@ -97,7 +120,7 @@ button {
     margin: 23px 0;
     font-size: 36px;
     font-weight: bolder;
-    color: #1F2937;
+    color: #e5e7eb;
 }
 
 .images {
@@ -108,8 +131,13 @@ button {
 }
 
 .img {
-    width: 125px;
+    width: 350px;
     height: auto;
+    border-radius: 50px;
+}
+
+.bronco {
+    width: 450px;
 }
 
 .img-container {
@@ -118,34 +146,43 @@ button {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 200px;
+
     flex-shrink: 1;
 }
 
 .text {
     margin-top: 10px;
-    font-size: 9px;
+    font-size: 14px;
     width: 100px;
+    font-style: italic;
 }
 
-.testimonial {
+.quotes {
     display: flex;
     justify-content: center;
     align-self: center;
     flex-direction: column;
     width: 100%;
-    background-color: #e5e7eb;
-    color: #1F2937;
+    background-image: url("./images/shelby-cobra.avif");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
+    background-color: black;
+    color: #e5e7eb;
+    text-shadow: black 2px 2px;
+    font-weight: 600;
     font-size: 36px;
     padding: 40px 0;
+
 }
 
-.quote {
+#quote {
     display: flex;
     align-self: center;
     width: 815px;
     font-weight: lighter;
     font-style: italic;
+    opacity: .9;
 }
 
 .author {
@@ -155,7 +192,7 @@ button {
     font-weight: bold;
 }
 
-.cta {
+.contact {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -170,13 +207,13 @@ button {
     font-size: 12px;
 }
 
-.cta-left h3 {
+.contact-left h3 {
     font-size: 12px;
     font-weight: lighter;
     flex-shrink: 1;
 }
 
-.cta-right button {
+.contact-right button {
     flex-shrink: 0;
     color: #e5e7eb;
     border: 2px solid #e5e7eb;
